@@ -15,7 +15,7 @@ jobs:
             - run: echo $COWSAY_MESSAGE > /var/www/html/cowsay.txt
               env:
                 COWSAY_MESSAGE: ${{ vars.COWSAY_MESSAGE }}
-            - run: cat /var/www/html.cowsay.txt
+            - run: cat /var/www/html/cowsay.txt
             - run: |
                 echo "secret: $SECURE_MSG" > /var/www/html/secure.txt
               env:
